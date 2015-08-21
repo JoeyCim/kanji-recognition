@@ -135,7 +135,7 @@ public class DrawFrame extends JFrame {
 
         try {
             BufferedReader br = new BufferedReader
-                    (new FileReader("/home/joey/IdeaProjects/Kanji Detection/resources/kanjilist.txt"));
+                (new FileReader("/home/joey/IdeaProjects/Kanji Detection/resources/kanjilist.txt"));
             kanjiStr = br.readLine();
         } catch(IOException e ) { e.printStackTrace(); }
     }
@@ -197,7 +197,7 @@ public class DrawFrame extends JFrame {
                     // 'IMAGE_OFFSET's account for the image not being located at the
                     // top-left of the screen.
                     g2.drawLine(startX - IMAGE_OFFSET_X, startY - IMAGE_OFFSET_Y,
-                            endX - IMAGE_OFFSET_X, endY - IMAGE_OFFSET_Y);
+                        endX - IMAGE_OFFSET_X, endY - IMAGE_OFFSET_Y);
                     repaint();
                     startX = endX;
                     startY = endY;
