@@ -7,7 +7,26 @@ public class Processor {
 
     // 'Weights' for the various criteria that determine the similarity between two kanji. These are, for the most part,
     // 'magic numbers' that seem to work well.
-    static final double[] WEIGHTS = {0.35,0.6,0.05,0.1,1,1,1,1,1,1,1,1,0.3,0.3,0.3,0.3,0.3,0.3};
+    static final double[] WEIGHTS = {
+        0.35, // Number of components
+        0.6,  // Number of enclosed regions
+        0.05, // Kanji proportions
+        0.1,  // Kanji "density" (portion of kanji region that's black)
+        1,    // Kanji "x-center of mass"
+        1,    // Kanji "y-center of mass"
+        1,    // "Weight" of first 1/3rd vertical region
+        1,    // "Weight" of second 1/3rd vertical region
+        1,    // "Weight" of third 1/3rd vertical region
+        1,    // "Weight" of first 1/3rd horizontal region
+        1,    // "Weight" of second 1/3rd horizontal region
+        1,    // "Weight" of third 1/3rd horizontal region
+        0.3,  // Number of components in first 1/3rd vertical region
+        0.3,  // Number of components in second 1/3rd vertical region
+        0.3,  // Number of components in third 1/3rd vertical region
+        0.3,  // Number of components in first 1/3rd horizontal region
+        0.3,  // Number of components in second 1/3rd horizontal region
+        0.3   // Number of components in third 1/3rd horizontal region
+    };
 
     boolean[][] found;
     int[][] imgArr; //2D array representation of the
