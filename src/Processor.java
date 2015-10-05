@@ -14,12 +14,12 @@ public class Processor {
         0.1,  // Kanji "density" (portion of kanji region that's black)
         1,    // Kanji "x-center of mass"
         1,    // Kanji "y-center of mass"
-        1,    // "Weight" of first 1/3rd vertical region
-        1,    // "Weight" of second 1/3rd vertical region
-        1,    // "Weight" of third 1/3rd vertical region
-        1,    // "Weight" of first 1/3rd horizontal region
-        1,    // "Weight" of second 1/3rd horizontal region
-        1,    // "Weight" of third 1/3rd horizontal region
+        1,    // "Relative mass" of first 1/3rd vertical region
+        1,    // "Relative mass" of second 1/3rd vertical region
+        1,    // "Relative mass" of third 1/3rd vertical region
+        1,    // "Relative mass" of first 1/3rd horizontal region
+        1,    // "Relative mass" of second 1/3rd horizontal region
+        1,    // "Relative mass" of third 1/3rd horizontal region
         0.3,  // Number of components in first 1/3rd vertical region
         0.3,  // Number of components in second 1/3rd vertical region
         0.3,  // Number of components in third 1/3rd vertical region
